@@ -1,0 +1,86 @@
+/* typography */
+
+@font-face {
+  font-family: 'sparta';
+  src: url(../fonts/spartan-regular.ttf);
+  font-style: normal;
+  font-weight: 300 /* normal */
+}
+
+@font-face {
+  font-family: 'sparta';
+  src: url(../fonts/spartan-light.ttf);
+  font-style: normal;
+  font-weight: 200; /* light */
+}
+
+@font-face {
+  font-family: 'sparta';
+  src: url(../fonts/spartan-semibold.ttf);
+  font-style: normal;
+  font-weight: 400; /* semibold */
+}
+
+@font-face {
+  font-family: 'sparta';
+  src: url(../fonts/spartan-bold.ttf);
+  font-style: normal;
+  font-weight: 500; /* bold */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 300 18px/30px "sparta", sans-serif;
+  letter-spacing: 0.22px;
+  color: white
+}
+
+h1 {
+  font: normal 200 4rem/4.5rem "sparta", sans-serif;
+  letter-spacing: 0.05rem;
+}
+
+h2 {
+  font: normal 500 2.5rem/3.5rem "sparta", sans-serif;
+  letter-spacing: 0.031rem;
+}
+
+h3 {
+  font: normal 500 1.125rem/1.75rem "sparta", sans-serif;
+  letter-spacing: 0.014rem;
+}
+
+h4 {
+  font: normal 400 0.875rem/1.75rem "sparta", sans-serif;
+  letter-spacing: 0.125rem;
+}
+
+button {
+  font: normal 400 0.875rem/1rem "sparta", sans-serif;
+  letter-spacing: 0.125rem;
+}
+
+/* header of website */
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-img-container {
+  border: 2px solid red;
+  width: 100%;
+  height: 200px;
+}
+
+.header-img {
+  width: 100%;
+  border: 2px solid green;
+}
+
+.header-text {
+  margin: auto;
+  padding: 24px;
+}
