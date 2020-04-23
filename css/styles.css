@@ -35,12 +35,24 @@
 body {
   font: normal 300 18px/30px "sparta", sans-serif;
   letter-spacing: 0.22px;
-  color: black;
+  color: white;
 }
 
 h1 {
   font: normal 200 4rem/4.5rem "sparta", sans-serif;
   letter-spacing: 0.05rem;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: /* 1.778rem */ 32px;
+    line-height: /* 2.222rem */ 40px;
+  }
+
+  body {
+    font-size: /* 0.833rem */ 15px;
+    line-height: /* 1.389rem */ 25px;
+  }
 }
 
 h2 {
@@ -63,21 +75,39 @@ button {
   letter-spacing: 0.125rem;
 }
 
-/* header of website */
+/* header */
 header {
-  display: flex;
-  flex-direction: column;
-
   background-color: #111111;
+  display: flex;
 }
 
-.hero-img {
-  display: flex;
-  border: 2px solid red;
+.header-background {
+  background: url(../img/hero/hero-bg-mobile.jpg) top no-repeat;
+  height: 100vh;
   width: 100%;
 }
 
-.header-img {
-  margin: auto;
-  max-width: 450px;
+/* header text content */
+.header-text {
+  text-align: center;
+  padding: 232px 24px;
+}
+
+.logo {
+  margin: 0 0 32px 0;
+}
+
+.p-header {
+  margin: 24px 0 34px 0;
+}
+
+/* very small devices */
+
+@media (max-width: 321px) {
+  .header-background {
+    background-size: 305px;
+  }
+  .header-text {
+    padding: 180px 24px;
+  }
 }
