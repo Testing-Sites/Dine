@@ -38,10 +38,6 @@ body {
   color: white;
 }
 
-h1 {
-  font: normal 200 4rem/4.5rem "sparta", sans-serif;
-  letter-spacing: 0.05rem;
-}
 
 /* mobile */
 @media (max-width: 500px) {
@@ -57,7 +53,7 @@ h1 {
 }
 
 /* tablet */
-@media (min-width: 769px) {
+@media (min-width: 500px) {
   h1 {
     font-size: /* 2.667rem */ 48px;
     line-height: /* 3.556rem */ 64px;
@@ -68,6 +64,15 @@ h1 {
     font-size: /* 1rem */ 18px;
     line-height: /* 1.667rem */ 30px;
     letter-spacing: /* -0.012 */ -0.225px;
+  }
+}
+
+/* large devices */
+
+@media (max-width: 800px) {
+  h1 {
+    font: normal 200 4rem/4.5rem "sparta", sans-serif;
+    letter-spacing: 0.05rem;
   }
 }
 
@@ -158,12 +163,19 @@ header {
 
 /* tablet devices */
 
-@media (min-width: 768px) {
+@media (min-width: 500px) {
   .header-text {
-    padding: 232px 40px;
+    padding: 232px 48px;
   }
 
   .p-header {
     margin: 24px 0 24px 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .header-background {
+    background: url(../img/hero/hero-bg-mobile.jpg) top no-repeat;
+
   }
 }
