@@ -35,7 +35,7 @@
 body {
   font: normal 300 18px/30px "sparta", sans-serif;
   letter-spacing: 0.22px;
-  color: white
+  color: black;
 }
 
 h1 {
@@ -67,4 +67,17 @@ button {
 header {
   display: flex;
   flex-direction: column;
+
+  background-color: #111111;
+}
+
+.hero-img {
+  display: flex;
+  border: 2px solid red;
+  width: 100%;
+}
+
+.header-img {
+  margin: auto;
+  max-width: 450px;
 }
