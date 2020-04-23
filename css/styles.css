@@ -43,6 +43,7 @@ h1 {
   letter-spacing: 0.05rem;
 }
 
+/* mobile */
 @media (max-width: 500px) {
   h1 {
     font-size: /* 1.778rem */ 32px;
@@ -52,6 +53,21 @@ h1 {
   body {
     font-size: /* 0.833rem */ 15px;
     line-height: /* 1.389rem */ 25px;
+  }
+}
+
+/* tablet */
+@media (min-width: 769px) {
+  h1 {
+    font-size: /* 2.667rem */ 48px;
+    line-height: /* 3.556rem */ 64px;
+    letter-spacing: /* 0.033 */ -0.6px ;
+  }
+
+  body {
+    font-size: /* 1rem */ 18px;
+    line-height: /* 1.667rem */ 30px;
+    letter-spacing: /* -0.012 */ -0.225px;
   }
 }
 
@@ -70,9 +86,37 @@ h4 {
   letter-spacing: 0.125rem;
 }
 
+/* buttons */
+
 button {
   font: normal 400 0.875rem/1rem "sparta", sans-serif;
   letter-spacing: 0.125rem;
+  text-transform: uppercase;
+
+  padding: 24px 48px;
+  background: transparent;
+}
+
+/* btn light */
+
+.btn-light {
+  color: white;
+  border: 1px solid white;
+}
+
+.btn-light:hover {
+  color: #111111;
+  border: 1px solid white;
+  background: white;
+}
+
+/* btn dark  */
+
+/* links */
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* header */
@@ -109,5 +153,17 @@ header {
   }
   .header-text {
     padding: 180px 24px;
+  }
+}
+
+/* tablet devices */
+
+@media (min-width: 768px) {
+  .header-text {
+    padding: 232px 40px;
+  }
+
+  .p-header {
+    margin: 24px 0 24px 0;
   }
 }
