@@ -69,7 +69,7 @@ body {
 
 /* large devices */
 
-@media (max-width: 800px) {
+@media (min-width: 800px) {
   h1 {
     font: normal 200 4rem/4.5rem "sparta", sans-serif;
     letter-spacing: 0.05rem;
@@ -175,7 +175,19 @@ header {
 
 @media (min-width: 800px) {
   .header-background {
-    background: url(../img/hero/hero-bg-mobile.jpg) top no-repeat;
+    background: url(../img/hero/hero-bg-desktop.jpg) center/cover no-repeat;
+    height: 100%;
+    width: 100%;
+  }
 
+  .logo {
+    margin: 0 0 153px 0;
+  }
+
+  .header-text {
+    text-align: left;
+    width: 40%;
+    padding: 65px 0 198px 0;
+    margin-left: 10%;
   }
 }
