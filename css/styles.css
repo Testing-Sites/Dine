@@ -91,6 +91,8 @@ h4 {
   letter-spacing: 0.125rem;
 }
 
+/* containers  */
+
 /* buttons */
 
 button {
@@ -134,12 +136,14 @@ header {
   background: url(../img/hero/hero-bg-mobile.jpg) top no-repeat;
   max-height: 748px;
   width: 100%;
+
+  padding: 0 24px;
 }
 
 /* header text content */
 .header-text {
   text-align: center;
-  padding: 232px 24px;
+  padding: 232px 0;
 }
 
 .logo {
@@ -150,22 +154,36 @@ header {
   margin: 24px 0 34px 0;
 }
 
-/* containers  */
+/* main content */
+
 .container {
-  /* padding: 0 24px; */
+
 }
 
-/* cards */
+/* cards  */
 
+.cards-main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-one {
+  position: absolute;
+  top: 676px;
+}
 
 /* very small devices */
 
 @media (max-width: 321px) {
+  html {
+
+  }
   .header-background {
     background-size: 305px;
   }
   .header-text {
-    padding: 180px 24px;
+    padding: 180px 0;
   }
 }
 
@@ -175,15 +193,17 @@ header {
   .header-background {
     background: url(../img/hero/hero-bg-tablet.jpg) top no-repeat;
     max-height: 992px;
+    padding: 0 48px;
   }
 
   .header-text {
-    padding: 374px 0 0 0;
+    padding: 374px 0 216px 0;
   }
 
   .p-header {
     margin: 24px 0 24px 0;
   }
+
 }
 
 /* large devices */
@@ -191,12 +211,8 @@ header {
 @media (min-width: 800px) {
   .header-background {
     background: url(../img/hero/hero-bg-desktop.jpg) center/cover no-repeat;
-    height: 100%;
+    width: 100%;
     max-height: 798px;
-  }
-
-  .logo {
-    margin: 0 0 153px 0;
   }
 
   .header-text {
@@ -204,6 +220,10 @@ header {
     width: 45%;
     padding: 65px 0 198px 0;
     margin-left: 10%;
+  }
+
+  .logo {
+    margin: 0 0 153px 0;
   }
 
   .btn-light {
