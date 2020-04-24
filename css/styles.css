@@ -132,7 +132,7 @@ header {
 
 .header-background {
   background: url(../img/hero/hero-bg-mobile.jpg) top no-repeat;
-  height: 100vh;
+  max-height: 748px;
   width: 100%;
 }
 
@@ -164,8 +164,13 @@ header {
 /* tablet devices */
 
 @media (min-width: 500px) {
+  .header-background {
+    background: url(../img/hero/hero-bg-tablet.jpg) top no-repeat;
+    max-height: 992px;
+  }
+
   .header-text {
-    padding: 232px 48px;
+    padding: 374px 48px 0 48px;
   }
 
   .p-header {
