@@ -173,11 +173,13 @@ header {
   }
 }
 
+/* large devices */
+
 @media (min-width: 800px) {
   .header-background {
     background: url(../img/hero/hero-bg-desktop.jpg) center/cover no-repeat;
     height: 100%;
-    width: 100%;
+    max-height: 798px;
   }
 
   .logo {
@@ -186,8 +188,13 @@ header {
 
   .header-text {
     text-align: left;
-    width: 40%;
+    width: 45%;
     padding: 65px 0 198px 0;
     margin-left: 10%;
   }
+
+  .btn-light {
+    margin-top: 18px;
+  }
+
 }
