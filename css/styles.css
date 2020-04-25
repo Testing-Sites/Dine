@@ -165,8 +165,12 @@ header {
 /* main content */
 /* cards  */
 
-
 /* very small devices */
+@media (max-width: 350px) {
+  .header-text {
+    padding: 70% 0 5% 0;
+  }
+}
 
 /* tablet devices */
 
