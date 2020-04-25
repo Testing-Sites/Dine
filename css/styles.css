@@ -49,6 +49,10 @@ h1 {
   letter-spacing: -0.027rem;
 }
 
+.h1-bold {
+  font-weight: bold;
+}
+
 h2 {
   font: normal 500 2.133rem/2.222rem "sparta", sans-serif;
   letter-spacing: -0.022rem;
@@ -164,6 +168,20 @@ header {
 
 /* main content */
 /* cards  */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.img-cards {
+  width: 100%;
+}
+
+.line-break {
+  margin: 48px 0 32px 0;
+}
 
 /* very small devices */
 @media (max-width: 350px) {
