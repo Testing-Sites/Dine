@@ -173,6 +173,12 @@ header {
   display: flex;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
+}
+
+.card-one,
+.card-two {
+  margin-bottom: 80px;
 }
 
 .img-cards {
