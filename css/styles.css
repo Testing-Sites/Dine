@@ -49,10 +49,6 @@ h1 {
   letter-spacing: -0.027rem;
 }
 
-.h1-bold {
-  font-weight: bold;
-}
-
 h2 {
   font: normal 500 2.133rem/2.222rem "sparta", sans-serif;
   letter-spacing: -0.022rem;
@@ -99,6 +95,10 @@ h4 {
 
 .font-black {
   color: #242B37;
+}
+
+.h1-bold {
+  font-weight: bold;
 }
 
 /* containers  */
