@@ -174,6 +174,8 @@ header {
   justify-content: center;
   text-align: center;
   flex-direction: column;
+
+  margin-top: -90px;
 }
 
 .card-one,
@@ -193,6 +195,10 @@ header {
 @media (max-width: 350px) {
   .header-text {
     padding: 70% 0 5% 0;
+  }
+
+  .cards {
+    margin-top: -1%;
   }
 }
 
@@ -259,9 +265,14 @@ header {
     margin: 18px 0;
   }
 
+  /* cards  */
+
   .cards {
     text-align: left;
+    margin-top: -7%;
   }
+
+  /* cards -- flex */
 
   .card-one,
   .card-two {
