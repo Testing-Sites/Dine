@@ -97,11 +97,14 @@ h4 {
   color: #242B37;
 }
 
-.h1-main {
+.h1-bold {
   font-weight: bold;
 }
 
 /* containers  */
+.container {
+  padding: 0 24px;
+}
 
 /* buttons */
 
@@ -142,10 +145,6 @@ header {
   display: flex;
 }
 
-.container {
-  padding: 0 24px;
-}
-
 .header-background {
   background: url(../img/hero/hero-bg-mobile.jpg) top no-repeat;
   max-height: 748px;
@@ -169,12 +168,15 @@ header {
 /* main content */
 /* cards  */
 
-.cards {
+.cards,
+.highlights {
   display: flex;
   justify-content: center;
   text-align: center;
   flex-direction: column;
+}
 
+.cards {
   margin-top: -90px;
 }
 
@@ -189,6 +191,12 @@ header {
 
 .line-break {
   margin: 48px 0 32px 0;
+}
+
+/* highlights from the resteraunt  */
+.highlights {
+  padding-top: 24px;
+  background-color: black;
 }
 
 /* very small devices */
