@@ -252,6 +252,21 @@ header {
     margin-bottom: 102px;
   }
 
+  /* higlights */
+
+  .highlights-images {
+    font-size: 15px;
+  }
+
+  .food-hl {
+    display: flex;
+  }
+
+  .img-hl,
+  .txt-hl {
+    width: 50%;
+  }
+
 }
 
 /* large devices */
