@@ -91,6 +91,11 @@ h4 {
     line-height: 4.8rem;
     letter-spacing: 0.053rem;
   }
+
+  .h1-sml {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
 }
 
 .font-black {
@@ -101,8 +106,8 @@ h4 {
   font-weight: bold;
 }
 
-.lh-25 /* lineheight */ {
-  line-height: 1.867rem;
+.p-m-sml {
+  margin: 4px 0 0 0;
 }
 
 /* containers  */
@@ -253,18 +258,29 @@ header {
   }
 
   /* higlights */
+  .hl-txt-margin {
+    margin: 0 0 0 0;
+  }
+
+  .hl-p-margin,
+  .hl-img {
+    margin: 4px 0 0 0;
+  }
 
   .highlights-images {
     font-size: 15px;
+    line-height: 28px;
+    text-align: left;
   }
 
   .food-hl {
     display: flex;
+    justify-content: center;
   }
 
   .img-hl,
   .txt-hl {
-    width: 50%;
+    width: 45%;
   }
 
 }
@@ -312,7 +328,7 @@ header {
   }
 
   .row-card {
-    width: 45%;
+    width: 42.5%;
     align-self: center;
   }
 
@@ -323,4 +339,24 @@ header {
   .order2-card-2 {
     order: 1;
   }
+
+}
+
+@media (min-width: 950px) {
+
+    .highlights {
+      display: flex;
+      flex-direction: row;
+      justify-content: between;
+
+      text-align: left;
+    }
+
+    .highlights-header {
+      max-width: 45%;
+    }
+
+    .highlights-images {
+      max-width: 45%;
+    }
 }
