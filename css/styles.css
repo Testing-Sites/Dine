@@ -356,6 +356,8 @@ header {
       justify-content: space-between;
 
       text-align: left;
+      padding-top: 200px;
+      padding-bottom: 120px; 
     }
 
     .highlights-header {
