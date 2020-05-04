@@ -350,22 +350,34 @@ header {
 
 @media (min-width: 950px) {
 
-    .highlights {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+  .highlights {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-      text-align: left;
-      padding-top: 200px;
-      padding-bottom: 120px; 
-    }
+    text-align: left;
+    padding-top: 200px;
+    padding-bottom: 120px;
 
-    .highlights-header {
-      max-width: 42.5%;
-    }
+    margin-top: -14%;
+  }
 
-    .highlights-images {
-      max-width: 52.5%;
-    }
+  .highlights-header {
+    max-width: 42.5%;
+  }
 
+  .highlights-images {
+    max-width: 52.5%;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .highlights {
+    margin-top: 0;
+  }
+
+  .cards {
+    margin-top: 102px;
+  }
 }
