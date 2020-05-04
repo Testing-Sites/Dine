@@ -258,6 +258,11 @@ header {
   }
 
   /* higlights */
+  .highlights {
+    padding-top: 40px;
+    padding-bottom: 96px;
+  }
+
   .hl-txt-margin {
     margin: 0 0 0 0;
   }
@@ -275,12 +280,11 @@ header {
 
   .food-hl {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 
-  .img-hl,
   .txt-hl {
-    width: 45%;
+    padding-left: 30px;
   }
 
 }
@@ -342,21 +346,24 @@ header {
 
 }
 
+/* large devices => highlights */
+
 @media (min-width: 950px) {
 
     .highlights {
       display: flex;
       flex-direction: row;
-      justify-content: between;
+      justify-content: space-between;
 
       text-align: left;
     }
 
     .highlights-header {
-      max-width: 45%;
+      max-width: 42.5%;
     }
 
     .highlights-images {
-      max-width: 45%;
+      max-width: 52.5%;
     }
+
 }
