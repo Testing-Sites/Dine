@@ -107,7 +107,7 @@ h4 {
 }
 
 .p-m-sml {
-  margin: 4px 0 0 0;
+  /* margin: 4px 0 0 0; */
 }
 
 /* containers  */
@@ -163,15 +163,19 @@ header {
 /* header text content */
 .header-text {
   text-align: center;
-  padding: 232px 0;
+  margin: 232px 0 152px 0;
 }
 
 .logo {
   margin: 0 0 32px 0;
 }
 
-.p-header {
-  margin: 24px 0 34px 0;
+.header-text h1 {
+  margin: 0 0 24px 0;
+}
+
+.header-text p {
+  margin: 0 0 24px 0;
 }
 
 /* main content */
@@ -186,20 +190,23 @@ header {
 }
 
 .cards {
-  margin-top: -90px;
+  margin: -90px 0 80px 0;
 }
 
-.card-one,
-.card-two {
+.line-break {
+  margin: 48px 0 32px 0;
+}
+
+.row-card h1 {
+
+}
+
+.card-one {
   margin-bottom: 80px;
 }
 
 .img-cards {
   max-width: 100%;
-}
-
-.line-break {
-  margin: 48px 0 32px 0;
 }
 
 /* highlights from the resteraunt  */
@@ -209,7 +216,7 @@ header {
 }
 
 .hl-image {
-  margin-top: 33px;
+  /* margin-top: 33px; */
 }
 
 /* very small devices */
@@ -219,7 +226,7 @@ header {
   }
 
   .cards {
-    margin-top: -1%;
+    /* margin-top: -1%; */
   }
 }
 
@@ -240,36 +247,36 @@ header {
   }
 
   .header-text {
-    padding: 374px 0 216px 0;
+    /* padding: 374px 0 216px 0; */
     margin: auto;
   }
 
   .p-header {
-    margin: 24px 0 24px 0;
+    /* margin: 24px 0 24px 0; */
   }
 
   .line-break {
-    margin: 56px 0 32px 0;
+    /* margin: 56px 0 32px 0; */
   }
 
   .card-one,
   .card-two {
-    margin-bottom: 102px;
+    /* margin-bottom: 102px; */
   }
 
   /* higlights */
   .highlights {
-    padding-top: 40px;
-    padding-bottom: 96px;
+    /* padding-top: 40px; */
+    /* padding-bottom: 96px; */
   }
 
   .hl-txt-margin {
-    margin: 0 0 0 0;
+    /* margin: 0 0 0 0; */
   }
 
   .hl-p-margin,
   .hl-img {
-    margin: 4px 0 0 0;
+    /* margin: 4px 0 0 0; */
   }
 
   .highlights-images {
@@ -284,7 +291,7 @@ header {
   }
 
   .txt-hl {
-    padding-left: 30px;
+    /* padding-left: 30px; */
   }
 
 }
@@ -298,29 +305,29 @@ header {
   }
 
   .container {
-    padding: 0 10%;
+    /* padding: 0 10%; */
   }
 
   .header-text {
     text-align: left;
     width: 50%;
-    padding: 65px 0 10% 0;
-    margin: 0;
+    /* padding: 65px 0 10% 0; */
+    /* margin: 0; */
   }
 
   .logo {
-    margin: 0 0 153px 0;
+    /* margin: 0 0 153px 0; */
   }
 
   .btn-light {
-    margin: 18px 0;
+    /* margin: 18px 0; */
   }
 
   /* cards  */
 
   .cards {
     text-align: left;
-    margin-top: -7%;
+    /* margin-top: -7%; */
   }
 
   /* cards -- flex */
@@ -349,6 +356,9 @@ header {
 /* large devices => highlights */
 
 @media (min-width: 950px) {
+  /* .cards {
+    margin-bottom: -15%;
+  } */
 
   .highlights {
     display: flex;
@@ -356,10 +366,8 @@ header {
     justify-content: space-between;
 
     text-align: left;
-    padding-top: 200px;
-    padding-bottom: 120px;
-
-    margin-top: -14%;
+    /* padding-top: 200px; */
+    /* padding-bottom: 120px; */
   }
 
   .highlights-header {
@@ -374,10 +382,10 @@ header {
 
 @media (max-width: 1000px) {
   .highlights {
-    margin-top: 0;
+    /* margin-top: 0; */
   }
 
   .cards {
-    margin-top: 102px;
+    /* margin-top: 102px; */
   }
 }
