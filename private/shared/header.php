@@ -1,3 +1,7 @@
+<?php
+  if(!isset($title)) {$title = 'Dine';}
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
