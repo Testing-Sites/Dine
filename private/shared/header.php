@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Bookings - <?php echo $title ?></title>
-    <link rel="stylesheet" href="../css/styles_php.css">
+    <link rel="stylesheet"  media="all" href="<?php echo url_for('/../css/styles_php.css'); ?>">
   </head>
   <body>
     <header>
@@ -12,6 +12,6 @@
 
     <navigation>
       <ul>
-        <li><a href="<?php echo ('../staff/index.php'); ?>">Menu</a></li>
+        <li><a href="<?php echo url_for('/staff/index.php'); ?>">Menu</a></li>
       </ul>
     </navigation>
