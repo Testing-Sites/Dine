@@ -16,7 +16,7 @@
     <h1>Bookings</h1>
 
     <div class="actions">
-      <a class="action "href="#">Create New Booking</a>
+      <a class="action" href="<?php echo url_for('/staff/bookings/new.php') ?>">Create New Booking</a>
     </div>
 
     <table class="list">
