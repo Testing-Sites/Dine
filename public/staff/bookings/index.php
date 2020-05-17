@@ -24,7 +24,6 @@
       <tr>
         <th>ID</th>
         <th>Position</th>
-        <th>Visible</th>
         <th>Name</th>
         <th>Email</th>
         <th>Date</th>
@@ -40,7 +39,6 @@
         <tr>
           <td><?php echo $booking['id']; ?></td>
           <td><?php echo $booking['position']; ?></td>
-          <td><?php echo $booking['visible'] == 1 ? 'true' : 'false'; ?></td>
           <td><?php echo $booking['name']; ?></td>
           <td><?php echo $booking['email']; ?></td>
           <td><?php echo $booking['date']; ?></td>
@@ -55,3 +53,5 @@
     </table>
   </div>
 </div>
+
+<?php include(SHARED_PATH .'/footer.php')?>
