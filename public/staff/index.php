@@ -7,7 +7,8 @@
   <div id="main-menu">
     <h2>Main Menu</h2>
     <ul>
-      <li><a href="<?php echo ('bookings/index.php'); ?>">Bookings</a></li>
+      <li><a href="<?php echo url_for('staff/bookings/index.php'); ?>">Bookings</a></li>
+      <li><a href="<?php echo url_for('../index.php')?>">Dine</a></li>
     </ul>
   </div>
 

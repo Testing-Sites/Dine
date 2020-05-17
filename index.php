@@ -1,3 +1,4 @@
+<?php require_once('private/initialize.php') ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -12,9 +13,10 @@
         <div class="header-background">
           <div class="container">
             <div class="header-text">
-              <img class="logo" src="img/logo.png" alt="logo for dine, font lowercase, bold, white">
+              <img  class="logo" src="img/logo.png" alt="logo for dine, font lowercase, bold, white">
               <h1>Exquisite dining since 1989</h1>
               <p class="p-header" >Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse.</p>
+              <a href="public/staff/index.php">Click for back end</a>
               <button class="btn-light" type="button" name="button"><a href="#"> button </a></button>
             </div>
           </div>
@@ -144,6 +146,8 @@
           </div>
 
         </div>
+
+        
 
       </div>
 
