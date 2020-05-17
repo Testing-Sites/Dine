@@ -23,6 +23,8 @@ if(is_post_request()) {
   echo "Time: " . $time . "<br />";
   echo "People: " . $people . "<br />";
 
+} else {
+
 }
 
 ?>
