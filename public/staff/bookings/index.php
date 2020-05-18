@@ -2,9 +2,9 @@
 
 <?php
   $bookings = [
-    ['id' => '1', 'position' => '1', 'visible' => '1', 'name' => 'Jamie', 'email' => 'james.phelps1995@live.com', 'date' => '05/10/2020', 'time' => '19:30', 'people' => '4'],
-    ['id' => '2', 'position' => '2', 'visible' => '1', 'name' => 'Amelia', 'email' => 'amelia.butler@gmail.com', 'date' => '17/10/2020', 'time' => '20:30', 'people' => '2'],
-    ['id' => '3', 'position' => '3', 'visible' => '1', 'name' => 'Tom', 'email' => 'tomyboiii@gmail.co.uk', 'date' => '18/12/2020', 'time' => '13:45', 'people' => '6'],
+    ['id' => '1', 'position' => '1', 'name' => 'Jamie', 'email' => 'james.phelps1995@live.com', 'date' => '05/10/2020', 'time' => '19:30', 'people' => '4'],
+    ['id' => '2', 'position' => '2', 'name' => 'Amelia', 'email' => 'amelia.butler@gmail.com', 'date' => '17/10/2020', 'time' => '20:30', 'people' => '2'],
+    ['id' => '3', 'position' => '3', 'name' => 'Tom', 'email' => 'tomyboiii@gmail.co.uk', 'date' => '18/12/2020', 'time' => '13:45', 'people' => '6'],
   ];
 ?>
 
