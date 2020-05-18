@@ -12,16 +12,29 @@ if(is_post_request()) {
 
   $name = $_POST['name'] ?? '';
   $email = $_POST['email'] ?? '';
-  $date = $_POST['date'] ?? '';
-  $time = $_POST['time'] ?? '';
+  $date = $_POST['booking_date'] ?? '';
+  $time = $_POST['booking_time'] ?? '';
   $people = $_POST['people'] ?? '';
 
-  echo "Form parameters <br />";
-  echo "Name: " . $name . "<br />";
-  echo "Email: " . $email . "<br />";
-  echo "Date: " . $date . "<br />";
-  echo "Time: " . $time . "<br />";
-  echo "People: " . $people . "<br />";
+  $sql = "INSERT INTO bookings ";
+  $sql .= "(name, email, booking_date, booking_time, people) ";
+  $sql .= "VALUES (";
+  $sql .= "'" . $name . "', ";
+  $sql .= "'" . $email . "', ";
+  $sql .= "'" . $date . "', ";
+  $sql .= "'" . $time . "', ";
+  $sql .= "'" . $people . "'";
+  $sql .= ")";
+  $result = mysqli_query($db, $sql);
+
+  if($result) {
+    $new_id = mysqli_insert_id($db);
+    redirect_to(url_for('/staff/bookings/show.php?id=' . $new_id));
+  } else {
+    echo mysqli_error($db);
+    db_disconnect($db);
+    exit;
+  }
 
 } else {
 
