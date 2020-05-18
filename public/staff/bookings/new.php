@@ -49,11 +49,11 @@ if(is_post_request()) {
       </dl>
       <dl>
         <dt>Date</dt>
-        <dd><input type="date" name="date"></dd>
+        <dd><input type="date" name="booking_date"></dd>
       </dl>
       <dl>
         <dt>Time</dt>
-        <dd><input type="time" name="time"></dd>
+        <dd><input type="time" name="booking_time"></dd>
       </dl>
       <dl>
         <dt>People</dt>
