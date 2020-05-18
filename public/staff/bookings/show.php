@@ -7,10 +7,7 @@ require_once('../../../private/initialize.php')
 
 $id = $_GET['id'] ?? '1';
 
-$sql = "SELECT * FROM bookings ";
-$sql .= "WHERE id='" . $id . "'";
-$results = mysqli_query($db, $sql);
-$booking = mysqli_fetch_assoc($results);
+$booking = find_booking_by_id($id);
 
 ?>
 
