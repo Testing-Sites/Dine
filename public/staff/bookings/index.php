@@ -4,7 +4,6 @@
 
   $bookings_set = find_all_bookings();
 
-
 ?>
 
 <?php $title = 'bookings'?>
