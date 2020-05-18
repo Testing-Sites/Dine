@@ -1,11 +1,10 @@
 <?php require_once('../../../private/initialize.php') ?>
 
 <?php
-  $bookings = [
-    ['id' => '1', 'position' => '1', 'name' => 'Jamie', 'email' => 'james.phelps1995@live.com', 'date' => '05/10/2020', 'time' => '19:30', 'people' => '4'],
-    ['id' => '2', 'position' => '2', 'name' => 'Amelia', 'email' => 'amelia.butler@gmail.com', 'date' => '17/10/2020', 'time' => '20:30', 'people' => '2'],
-    ['id' => '3', 'position' => '3', 'name' => 'Tom', 'email' => 'tomyboiii@gmail.co.uk', 'date' => '18/12/2020', 'time' => '13:45', 'people' => '6'],
-  ];
+
+  $bookings_set = find_all_bookings();
+
+
 ?>
 
 <?php $title = 'bookings'?>
@@ -34,16 +33,16 @@
         <th>&nbsp;</th>
       </tr>
 
-      <?php foreach($bookings as $booking) {?>
+      <?php while($booking = mysqli_fetch_assoc($bookings_set)) {?>
 
         <tr>
-          <td><?php echo $booking['id']; ?></td>
-          <td><?php echo $booking['position']; ?></td>
-          <td><?php echo $booking['name']; ?></td>
-          <td><?php echo $booking['email']; ?></td>
-          <td><?php echo $booking['date']; ?></td>
-          <td><?php echo $booking['time']; ?></td>
-          <td><?php echo $booking['people']; ?></td>
+          <td><?php echo h($booking['id']); ?></td>
+          <td><?php echo h($booking['position']); ?></td>
+          <td><?php echo h($booking['name']); ?></td>
+          <td><?php echo h($booking['email']); ?></td>
+          <td><?php echo h($booking['booking_date']); ?></td>
+          <td><?php echo h($booking['booking_time']); ?></td>
+          <td><?php echo h($booking['people']); ?></td>
           <td><a class="action" href="<?php echo url_for('/staff/bookings/show.php?id=' . h(u($booking['id']))); ?>">View</a></td>
           <td><a class="action" href="<?php echo url_for('/staff/bookings/edit.php?id=' . h(u($booking['id']))); ?>">Edit</a></td>
           <td><a class="action" href="#">Delete</a></td>
