@@ -160,6 +160,12 @@ header {
   width: 100%;
 }
 
+.header-background-booking {
+  background: url(../img/booking/hero-bg-mobile.jpg) top no-repeat;
+  max-height: 748px;
+  width: 100%;
+}
+
 /* header text content */
 .header-text {
   text-align: center;
