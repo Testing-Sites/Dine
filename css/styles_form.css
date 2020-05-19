@@ -115,3 +115,13 @@ header {
 .background h1 {
   margin-bottom: 16px;
 }
+
+form {
+  color: black;
+}
+
+
+#operations {
+  clear: both;
+  margin: 1em 0 1em 75px;
+}
