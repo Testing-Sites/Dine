@@ -44,7 +44,7 @@
           <td><?php echo h($booking['people']); ?></td>
           <td><a class="action" href="<?php echo url_for('/staff/bookings/show.php?id=' . h(u($booking['id']))); ?>">View</a></td>
           <td><a class="action" href="<?php echo url_for('/staff/bookings/edit.php?id=' . h(u($booking['id']))); ?>">Edit</a></td>
-          <td><a class="action" href="#">Delete</a></td>
+          <td><a class="action" href="<?php echo url_for('/staff/bookings/delete.php?id=' . h(u($booking['id']))); ?>">Delete</a></td>
         </tr>
 
       <?php } ?>
