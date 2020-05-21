@@ -13,36 +13,39 @@ require_once('private/initialize.php');
     </div>
   </header>
 
-  <form action="<?php echo ('public/staff/bookings/new.php'); ?>" method="post">
-    <dl>
-      <dt>Name</dt>
-      <dd><input type="text" name="name" value=""></dd>
-    </dl>
-    <dl>
-      <dt>Email</dt>
-      <dd><input type="email" name="email"></dd>
-    </dl>
-    <dl>
-      <dt>Date</dt>
-      <dd><input type="date" name="booking_date"></dd>
-    </dl>
-    <dl>
-      <dt>Time</dt>
-      <dd><input type="time" name="booking_time"></dd>
-    </dl>
-    <dl>
-      <dt>People</dt>
-      <dd>
-        <select name="people">
-          <option value="1">1</option>
-        </select>
-      </dd>
-    </dl>
-    <div id="operations">
-      <input type="submit" value="Create Bookings" />
-    </div>
+  <div class="container">
 
-  </form>
+    <form class="form" action="<?php echo ('public/staff/bookings/new.php'); ?>" method="post">
+      <dl>
+        <dt>Name</dt>
+        <dd><input type="text" name="name" value=""></dd>
+      </dl>
+      <dl>
+        <dt>Email</dt>
+        <dd><input type="email" name="email"></dd>
+      </dl>
+      <dl>
+        <dt>Date</dt>
+        <dd><input type="date" name="booking_date"></dd>
+      </dl>
+      <dl>
+        <dt>Time</dt>
+        <dd><input type="time" name="booking_time"></dd>
+      </dl>
+      <dl>
+        <dt>People</dt>
+        <dd>
+          <select name="people">
+            <option value="1">1</option>
+          </select>
+        </dd>
+      </dl>
+      <div id="operations">
+        <input type="submit" value="Create Bookings" />
+      </div>
+
+    </form>
+  </div>
 
   </body>
 </html>
